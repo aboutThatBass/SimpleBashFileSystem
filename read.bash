@@ -2,6 +2,8 @@
 
 read -p "Enter a department code and course number: " dept num
 
+dept=${dept^^}
+
 filename="data/${dept}${num}.crs"
 
 if [ ! -f "$filename" ]; then
