@@ -10,6 +10,7 @@ read -p "Course end date: " c_end
 read -p "Credit hours: " hours
 read -p "Initial enrollment: " c_size
 
+dept=${dept^^}
 filename="data/${dept}${c_num}.crs"
 
 if [ -f "$filename" ]; then
